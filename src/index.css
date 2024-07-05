@@ -36,3 +36,18 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.1);
   color: #fff;
 }
+
+.calculator span.clear {
+  grid-column: span 2;
+  width: 120px;
+  background: rgb(255, 163, 26);
+}
+
+.calculator span.plus {
+  grid-row: span 2;
+  height: 120px;
+}
+
+.calculator span.equal {
+  background: rgb(255, 163, 26);
+}
