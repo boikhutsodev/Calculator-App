@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 function CalculatorMain() {
   const [inputValue, setInputValue] = useState("");
@@ -41,7 +41,7 @@ function CalculatorMain() {
         <span onClick={() => display("0")}>0</span>
         <span onClick={() => display("0")}>00</span>
         <span onClick={() => display(".")}>.</span>
-        <span className="equal" onClick={() => display("=")}>
+        <span className="equal" onClick={() => calculate()}>
           =
         </span>
       </form>
