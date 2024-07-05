@@ -3,6 +3,15 @@ import React, { useState } from "react";
 function CalculatorMain() {
   const [inputValue, setInputValue] = useState("");
 
+  function display(value) {
+    setInputValue(inputValue + value);
+  }
+
+  function calculate() {
+    let answer = eval(inputValue);
+    setInputValue(answer);
+  }
+
   return (
     <>
       <form name="calc" className="calculator">
