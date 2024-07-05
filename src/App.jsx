@@ -1,11 +1,10 @@
 import { useState } from "react";
+import CalculatorMain from "./CalculatorMain";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <h1>Count: </h1>
+      <CalculatorMain />
     </>
   );
 }
